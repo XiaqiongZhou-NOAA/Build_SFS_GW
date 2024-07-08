@@ -1,0 +1,20 @@
+base:
+  DO_JEDIATMVAR: "NO"
+  DO_JEDIATMENS: "NO"
+  DO_JEDIOCNVAR: "NO"
+  DO_JEDISNOWDA: "NO"
+  DO_MERGENSST: "NO"
+  FHMAX_GFS: 120
+  FHMAX_HF_GFS: 0
+  KEEPDATA: "NO"
+  REPLAY_ICS: "YES"
+  FLTFILEGFS: "postxconfig-NT-SFS.txt"
+  FLTFILEGFSF00: "postxconfig-NT-SFS.txt"
+  ACCOUNT: {{ 'HPC_ACCOUNT' | getenv }} 
+  HPSS_PROJECT: "emc-ensemble"
+  BASE_CPLIC: {{ 'TOPICDIR' | getenv }}/REPLAY_ICs/TEST
+fcst:
+  TYPE: "hydro"
+  MONO: "mono"
+
+
