@@ -5,10 +5,6 @@ set -u
 ####################################
 # Code
 HOMEgfs=${1:-${PWD}/../}
-YAML=${2:-${HOMEgfs}/dev/ci/cases/sfs/C192mx025_S2S_CPC_ICS.yaml}
-YAML=./C96mx100_S2S_CPC_ICS.yaml
-YAML=${2:-${HOMEgfs}/dev/ci/cases/sfs/C96mx100_S2S.yaml}
-YAML=./yamls/C192mx025_S2S_CPC_ICS.yaml
 YAML=./yamls/C192mx025_S2S_REPLAY_ICS.yaml
 export HPC_ACCOUNT=fv3-cpu
 
