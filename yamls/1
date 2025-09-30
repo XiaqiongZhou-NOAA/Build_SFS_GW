@@ -1,0 +1,7 @@
+workflow:
+  engine: rocoto
+  rocoto:
+    maxtries: 4
+    cyclethrottle: 10
+    taskthrottle: 25
+    verbosity: 2

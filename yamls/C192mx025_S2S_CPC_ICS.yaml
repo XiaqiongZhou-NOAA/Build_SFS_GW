@@ -1,0 +1,24 @@
+experiment:
+  net: sfs
+  mode: forecast-only
+  idate: 2017050100
+  edate: 2017050100
+  pslot: {{ 'pslot' | getenv }}
+  app: S2S
+  resdetatmos: 192
+  resensatmos: 192
+  resdetocean: 0.25
+  start: 'cold'
+  nens: 0
+  comroot: {{ 'RUNTESTS' | getenv }}/COMROOT
+  expdir: {{ 'RUNTESTS' | getenv }}/EXPDIR
+  icsdir: {{ 'TOPICDIR' | getenv }}/CPC/C192mx025
+  yaml: ./yamls/sfs_full_C192mx025_CPC_ICS.yaml
+
+workflow:
+  engine: rocoto
+  rocoto:
+    maxtries: 4
+    cyclethrottle: 10
+    taskthrottle: 25
+    verbosity: 2
