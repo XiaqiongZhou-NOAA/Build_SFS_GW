@@ -5,7 +5,7 @@ set -u
 ####################################
 # Code
 HOMEgfs=${1:-${PWD}/../}
-YAML=./yamls/C192mx025_S2S_REPLAY_ICS.yaml
+YAML=./yamls/C96mx100_S2S_CPC_ICS.yaml
 export HPC_ACCOUNT=fv3-cpu
 
 ########################
